@@ -1,0 +1,23 @@
+.img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.img-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+.text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.hov:hover{
+    transform: scale(1.1);
+    transition:0.4s ease-in-out;
+}

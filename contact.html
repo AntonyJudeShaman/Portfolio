@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="myLogo" width="150" height="150" >
+    </a>
+    <script>
+        function validate() {
+
+            var name =document.forms["form"]["name"].value;
+            var email =document.forms["form"]["email"].value;
+            var phone =document.forms["form"]["phone"].value;
+            var city=document.forms["form"]["city"].value;
+            var state=document.forms["form"]["state"].value;
+            
+
+
+
+            if (name == "") {
+                alert("Name is Empty");
+                return false;
+            }
+
+           
+
+            if (email == "") {
+                alert("Email is Empty");
+                return false;
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                alert("Invalid email address");
+                return false;
+            }
+
+            if (phone == "") {
+                alert("Phone number is Empty");
+                return false;
+
+            } else if (!/^\d{10}$/.test(phone)) {
+                alert("Invalid phone number");
+                return false;
+            }
+
+            if (city == "") {
+                alert("City is Empty");
+                return false;
+            }
+
+            if (state == "") {
+                alert("State is Empty");
+                return false;
+            }
+            
+           
+
+
+            return true;
+        }
+    </script>
+</head><br><br><br><br>
+<body style="text-align: center;padding:center;font-size: 25px;" background= "con.jpg" style="color:white;">
+    
+    <form name="form" onsubmit="return validate()" method="post" action="submit.html">
+        <div >
+        Enter Username:&nbsp;&nbsp;<input type="text" name="name" style="color:black; "><br><br>
+
+        Enter Email:&nbsp;&nbsp;<input type="email" name="email" style="color:aliceblue;  ;" ><br><br>
+
+        Enter Ph.no&nbsp;&nbsp;<input type="tel" name="phone" style="color:aliceblue; ;"><br><br>
+
+        Enter City:&nbsp;&nbsp;<input type="text" name="city" style="color:aliceblue; "><br><br>
+
+        Enter State:&nbsp;&nbsp;<input type="text" name="state" style="color:aliceblue; "><br><br>
+
+        <button type="submit" style="color:black;" onclick="">Submit</button>
+        
+        <button type="reset" style="color:black;">Clear Form</button>
+    </form>
+</body>
+</html>

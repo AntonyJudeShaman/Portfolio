@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<script>
+  function validate() {
+
+      var fname =document.forms["form"]["validationTooltip01"].value;
+      var lname =document.forms["form"]["validationTooltip02"].value;
+      var city=document.forms["form"]["validationTooltip04"].value;
+      var state=document.forms["form"]["validationTooltip05"].value;
+      var phone =document.forms["form"]["validationTooltip06"].value;
+      var email =document.forms["form"]["validationTooltip07"].value;
+      
+      
+
+
+
+      if (fname == "") {
+          alert("First Name is Empty");
+          return false;
+      }
+
+      if (lname == "") {
+          alert("Last Name is Empty");
+          return false;
+      }
+
+      if (city == "") {
+          alert("City is Empty");
+          return false;
+      }
+
+      if(validationTooltip05.selectedIndex===0){
+				alert("Please select a State");
+				return false;
+			}
+
+      if (phone == "") {
+          alert("Phone number is Empty");
+          return false;
+
+      } else if (!/^\d{10}$/.test(phone)) {
+          alert("Invalid phone number");
+          return false;
+      }
+
+      if (email == "") {
+          alert("Email is Empty");
+          return false;
+      } else if (!/\S+@\S+\.\S+/.test(email)) {
+          alert("Invalid email address");
+          return false;
+      }
+      return true;
+  }
+</script>
+<body class="prr">
+    <form name="form" style="margin-top: 2%; margin-left: 30%;" class="row g-3 needs-validation" method="post" onsubmit="return validate()" action="submit.html">
+      <a class="logo" href="index.html" style="display: block; width: 10%;">
+        <img class="hov" src="logo.png" alt="myLogo" width="150" height="150" >
+      </a> 
+      <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">First name</label>
+          <input type="text" class="form-control" placeholder="name" id="validationTooltip01" style=" width: 90%; background-color: black; color: aliceblue;">
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Last name</label>
+          <input type="text" class="form-control" placeholder="name" id="validationTooltip02" style="background-color: black; color: aliceblue;" >
+          
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip04" class="form-label">City</label>
+          <select class="form-select"  id="validationTooltip04" style="width: 60%; background-color: black; color: aliceblue;" >
+            <option selected disabled value="">Choose</option>
+            <option>Chennai</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+            <option>Mysore</option>
+            <option>Delhi</option>
+            <option>Kolkata</option>
+            <option>Ahmedabad</option>
+          </select>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip05" class="form-label" style="margin-left: -70%;"">State</label>
+          <select class="form-select" id="validationTooltip05" style="margin-left: -70%; width: 90%;background-color: black; color: aliceblue;" >
+            <option selected disabled value="">Choose</option>
+            <option>TamilNadu</option>
+            <option>Maharashtra</option>
+            <option>Haryana</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>West</option>
+          </select>
+          
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip06" class="form-label">Phone number</label>
+          <input type="tel" class="form-control" placeholder="Ph.no" id="validationTooltip06" style="background-color: black; color: aliceblue; width:60%;">
+         
+        </div>
+
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip07" class="form-label" style="margin-left: -34%;">Email</label>
+          <input type="text" class="form-control" placeholder="mail" id="validationTooltip07" style="margin-left: -34%; background-color: black; color: aliceblue; width:65%;" >
+          
+        </div>
+
+        <div class="col-md-7 position-relative">
+            <label for="validationTooltip08" class="form-label">Wanna Write Something??</label>
+            <textarea rows='9' cols="50" placeholder="10-20 words(Optional)" class="form-control" id="validationTooltip08" style="background-color: black; color: aliceblue;"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary hov" type="submit" style="background-color: rgb(35, 225, 32);border: 2px solid blue ; color: aliceblue;">Submit form</button>
+          <button class="btn btn-primary hov" type="reset" style="background-color: rgb(35, 225, 32);border: 2px solid blue ;  color: aliceblue; margin-left: 3%;">Reset form</button>
+        </div>       
+      </form>
+</body>
+</html>

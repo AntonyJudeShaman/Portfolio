@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>eg</title>
+    <style>
+        .container {
+            display:flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .half {
+            flex: 1;
+            height: 100vh;
+            padding: 10% 0% 0% 5%;
+        }
+
+        .left {
+            
+            border: solid black;
+            background-color: brown;
+        }
+
+        .right {
+            padding-top: 15%;
+            border: solid black;
+            background-color: green;
+        }
+    </style>
+</head>
+<script>
+    function sub(){
+        document.getElementById("nam").innerHTML=document.getElementById("name").value;
+
+    }
+</script>
+<body style="background-image: 'sky.jpg';">
+    
+    <div class="container">
+        
+        <div class="half left">
+            
+        <p class="pr"> Hello There!!<br>I am Antony Jude Shaman. I am an energetic, ambitious person who has developed a mature
+            and responsible approach to any task that I undertake. Looking
+            forward to improve my skills by exploring various fields of
+            knowledge.<br>I am currently pursuing <b>B.E CSE</b> in Loyola-ICAM College Of Engineering and technology</p>
+        </div>
+        <div class="half right" id=""><textarea name="" id="nam" cols="30" rows="10"></textarea></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.nav-link:hover{
+    color:rgb(25, 216, 194) !important;
+    border-radius: 100px;
+    font-family: 'Tilt Neon';
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+p{
+    text-align: center;
+    
+    font-size: 80px;
+    font-family: 'Tilt Neon';
+}
+
+.hov:hover{
+    transform: scale(1.1);
+    transition:0.4s ease-in-out;
+}
+
+.pr{
+    background-image: url("sand.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: justify;
+    text-decoration: solid blueviolet ;
+    font-size: 20px;
+    font-family: 'Tilt Neon';
+    min-height: 95vh;
+    background-position: center center ;
+}
+
+.sub{
+    text-align: center;
+    text-decoration: solid blueviolet;
+    font-size: 50px;
+    font-family: 'Tilt Neon';
+}
+
+.navbar-nav {
+    font-size: x-large;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-40%);
+    padding-top: 20px;
+}
+
+body {
+    color:aliceblue;
+    background-image: url("p1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Tilt Neon';
+    min-height: 95vh;
+    background-position: center center ;
+    text-align: center;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.social-icons a:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+

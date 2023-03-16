@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.pr{
+    color: rgb(150, 225, 200);
+    background-image: url("darksky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: justify;
+    text-decoration: solid blueviolet ;
+    font-size: 20px;
+    font-family: 'Tilt Neon';
+    min-height: 95vh;
+    background-position: center center ;
+}
+
+.mar{
+    background-color: rgba(83, 48, 48, 0.286);
+    border: 1px sold black;
+}
+.pr1{
+    color: rgb(150, 225, 200);
+    background-image: url("sand.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: justify;
+    text-decoration: solid blueviolet ;
+    font-size: 30px;
+    font-family: 'Tilt Neon';
+    min-height: 95vh;
+    background-position: center center ;
+}
+
+
+.size{
+    font-size: 50px;
+    color: rgb(17, 179, 162);
+}
+
+.hov:hover{
+    transform: scale(1.2);
+    transition:0.4s ease-in-out;
+}
+
+
+
+.prr{
+    color: rgb(150, 225, 200);
+    background-image: url("forest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: justify;
+    font-size: 30px;
+    font-family: 'Tilt Neon';
+    min-height: 95vh;
+    background-position: center center ;
+}
+
+.form-control::placeholder {
+    color: aliceblue;
+    opacity: 1; 
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+
+  
+  
