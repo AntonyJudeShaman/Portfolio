@@ -8,6 +8,26 @@
     transition: transform 0.3s ease-in-out;
 }
 
+
+  .colo1{
+    background: -webkit-linear-gradient( #a3c9e2, #9618f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+  .col2 {
+    background: -webkit-linear-gradient(#ff0078, #f6efa7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+ 
+  .col3 {
+    background: -webkit-linear-gradient(#c22ed0, #5ffae0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
 p{
     text-align: center;
     
